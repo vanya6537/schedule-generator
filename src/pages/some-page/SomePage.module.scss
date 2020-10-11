@@ -1,0 +1,11 @@
+.link {
+  color: #61dafb;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  & :focus {
+    outline: 0;
+  }
+}
