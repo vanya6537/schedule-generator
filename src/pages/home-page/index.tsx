@@ -12,21 +12,19 @@ export function HomePage(): JSX.Element {
   }, [history]);
 
   return (
-    <Layout>
-      <>
-        <img src={DefaultLogo} className={styles.logo} alt="logo" />
-        <p>
-          Hey, this is a template for
-          <br />
-          <code>Innopolis Schedule Generator</code>
-        </p>
-        <a className={styles.link} href="https://t.me/netslayer" target="_blank" rel="noopener noreferrer">
-          Message Me
-        </a>
-        <button className={styles.link} onClick={handleClick}>
-          Go to some page
-        </button>
-      </>
-    </Layout>
+    <>
+      <img src={DefaultLogo} className={styles.logo} alt="logo" />
+      <p>
+        Hey, this is a template for
+        <br />
+        <code>Innopolis Schedule Generator</code>
+      </p>
+      <a className={styles.link} href="https://t.me/netslayer" target="_blank" rel="noopener noreferrer">
+        Message Me
+      </a>
+      <button className={styles.link} onClick={handleClick}>
+        Go to some page
+      </button>
+    </>
   );
 }

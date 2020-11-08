@@ -6,13 +6,11 @@ import { useHistory } from 'react-router';
 export function SomePage(): JSX.Element {
   const history = useHistory();
   return (
-    <Layout>
-      <>
-        <p>This is some page</p>
-        <button className={styles.link} onClick={history.goBack}>
-          Go back
-        </button>
-      </>
-    </Layout>
+    <>
+      <p>This is some page</p>
+      <button className={styles.link} onClick={history.goBack}>
+        Go back
+      </button>
+    </>
   );
 }
