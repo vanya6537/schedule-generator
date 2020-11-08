@@ -6,6 +6,7 @@ import { SomePage } from './pages/some-page';
 
 import { AppRoutes } from 'src/constants/routes';
 import { Layout } from './components/Layout';
+import { SchedulePage } from './pages/schedule-page';
 
 function App(): JSX.Element {
   return (
@@ -15,6 +16,7 @@ function App(): JSX.Element {
           <Switch>
             <Route exact path={AppRoutes.Root} component={HomePage} />
             <Route path={AppRoutes.SomePage} component={SomePage} />
+            <Route path={AppRoutes.SchedulePage} component={SchedulePage} />
           </Switch>
         </Layout>
       </BrowserRouter>

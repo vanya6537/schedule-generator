@@ -3,7 +3,7 @@ import styles from './Layout.module.scss';
 import { Layout as AntdLayout, Menu as AntMenu } from 'antd';
 import { NavBar } from '../NavBar';
 import { AppRoutes } from '../../constants/routes';
-import { ScheduleOutlined, UploadOutlined, UserOutlined, VideoCameraAddOutlined } from '@ant-design/icons';
+import { QuestionCircleOutlined, ScheduleOutlined, UserOutlined, VideoCameraAddOutlined } from '@ant-design/icons';
 import { useHistory } from 'react-router';
 import isEqual from 'fast-deep-equal';
 
@@ -21,9 +21,9 @@ const navigation: NavigationElement[] = [
     route: AppRoutes.Root,
   },
   {
-    label: 'Home',
-    route: AppRoutes.Root,
-    icon: <UserOutlined />,
+    label: 'Schedule',
+    route: AppRoutes.SchedulePage,
+    icon: <ScheduleOutlined />,
   },
   {
     label: 'Courses',
@@ -33,12 +33,12 @@ const navigation: NavigationElement[] = [
   {
     label: 'Admin',
     route: AppRoutes.SomePage,
-    icon: <ScheduleOutlined />,
+    icon: <UserOutlined />,
   },
   {
     label: 'About',
     route: AppRoutes.SomePage,
-    icon: <UploadOutlined />,
+    icon: <QuestionCircleOutlined />,
   },
 ];
 

@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react';
-import { Layout } from 'src/components/Layout';
 import styles from './HomePage.module.scss';
 import DefaultLogo from '../../assets/logo.svg';
 import { useHistory } from 'react-router';
